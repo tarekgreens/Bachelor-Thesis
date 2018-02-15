@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff1f4">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:background="@color/lightGrey">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadow">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Distance:"
+                android:id="@+id/textView4"
+                android:textColor="@color/colorFilterText" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp">
+
+                <SeekBar
+                    android:layout_width="218dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/seekBarDistance"
+                    android:max="10"
+                    android:progress="4"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:id="@+id/tvDistanceValue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" km"
+                    android:id="@+id/tvDistanceUnit" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Filter results:"
+                android:id="@+id/textView6"
+                android:paddingTop="8dp"
+                android:textColor="@color/colorFilterText" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:id="@+id/cbMale"
+                        android:textColor="@color/colorFilterOptions"
+                        android:buttonTint="@color/colorFilterCheckBox"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Female"
+                        android:id="@+id/cbFemale"
+                        android:textColor="@color/colorFilterOptions"
+                        android:buttonTint="@color/colorFilterCheckBox"/>
+                </LinearLayout>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" with picture"
+                    android:id="@+id/cbPicture"
+                    android:checked="false"
+                    android:textColor="@color/colorFilterOptions"
+                    android:buttonTint="@color/colorFilterCheckBox"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="available right now"
+                    android:id="@+id/cbAvailable"
+                    android:checked="false"
+                    android:textColor="@color/colorFilterOptions"
+                    android:buttonTint="@color/colorFilterCheckBox"/>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" atleast 5 years experience"
+                    android:id="@+id/cbExperience"
+                    android:checked="false"
+                    android:textColor="@color/colorFilterOptions"
+                    android:buttonTint="@color/colorFilterCheckBox"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Minimum rating:"
+                android:id="@+id/textView7"
+                android:paddingTop="8dp"
+                android:textColor="@color/colorFilterText" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:paddingBottom="8dp">
+
+                <SeekBar
+                    android:layout_width="218dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sbMinimumRating"
+                    android:max="10"
+                    android:progress="0"
+                    android:indeterminate="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvMinimumRatingValue"
+                    android:text="0" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Filter"
+                android:textAllCaps="false"
+                android:id="@+id/applyfilter"
+                android:textColor="@android:color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:background="@android:color/holo_green_light"
+                android:textStyle="normal|bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

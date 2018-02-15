@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#495ab7</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="colorToolbar">#056785</color>
+    <color name="colorFilterText">#a4a7ab</color>
+    <color name="colorFilterOptions">#333333</color>
+    <color name="colorFilterCheckBox">#A4A7AB</color>
+    <color name="white">#ffffff</color>
+    <color name="lightGrey">#eff1f4</color>
+
+</resources>

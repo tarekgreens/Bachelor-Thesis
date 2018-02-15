@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:background="#ffffff">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="20dp"
+            android:layout_weight="0.15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Specialty"
+                android:id="@+id/specialtyName"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/colorFilterOptions" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.85">
+
+            <ImageView
+                android:layout_width="29dp"
+                android:layout_height="25dp"
+                android:id="@+id/imgForward"
+                android:src="@drawable/forwardicon"
+                android:layout_gravity="center_vertical" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        />
+
+</LinearLayout>

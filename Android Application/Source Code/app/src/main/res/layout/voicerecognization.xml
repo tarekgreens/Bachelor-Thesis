@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:text="Text to Speech:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView12"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <TextView
+        android:text="Status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvWatsonStatus" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Say something ..."
+        android:ems="10"
+        android:id="@+id/etWatson" />
+
+    <Button
+        android:text="Convert Text To Speech"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnWatson" />
+
+    <TextView
+        android:text="Speech to Text:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <TextView
+        android:text="Status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSTTStatus" />
+
+    <Button
+        android:text="Convert Speech To Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSTT" />
+
+    <TextView
+        android:text="Speech to Text Result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvSTTResult" />
+
+    <Button
+        android:text="Speech to text (android)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnVoice" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lvSpeechresult" />
+</LinearLayout>

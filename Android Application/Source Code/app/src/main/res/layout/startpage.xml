@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarstart"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#01a3d4"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            style="@style/ToolbarStyle"
+            app:elevation="0dp"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorToolbar">
+
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Specialty"
+                android:id="@+id/textView51"
+                android:textColor="#ffffff"
+                android:paddingBottom="6dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/specialty"
+                    android:id="@+id/imSpecialty"
+                    android:background="@color/white" />
+
+                <EditText
+                    android:layout_width="343dp"
+                    android:layout_height="37dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/etSpecialty"
+                    android:background="@color/white"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:id="@+id/textView6"
+                android:textColor="#ffffff"
+                android:paddingBottom="6dp"
+                android:paddingTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/specialty"
+                    android:id="@+id/imLocation"
+                    android:background="@color/white" />
+
+                <EditText
+                    android:layout_width="343dp"
+                    android:layout_height="37dp"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/etLocation"
+                    android:background="@color/white"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find doctors within"
+                android:id="@+id/textView8"
+                android:textColor="#ffffff"
+                android:paddingBottom="6dp"
+                android:paddingTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <SeekBar
+                    android:layout_width="218dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sbDistance"
+                    android:max="10"
+                    android:progress="4"
+
+                    android:progressBackgroundTint="#ffffff"
+                    android:progressTint="#ffffff"
+                    android:secondaryProgressTint="#ffffff"
+                    android:thumbTint="#ffffff"
+                    android:minHeight="5dp"
+                    android:maxHeight="5dp"
+                    android:nestedScrollingEnabled="false"
+                    android:mirrorForRtl="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:id="@+id/tvDistanceValue"
+                    android:textColor="#ffffff"
+                    android:paddingLeft="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" km"
+                    android:id="@+id/tvDistanceUnit"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Search"
+                    android:textAllCaps="false"
+                    android:id="@+id/searchButton"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:background="@drawable/borderlessbutton"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:text="Voice Search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnSpeak" />
+
+                <TextView
+                    android:text=""
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView11"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

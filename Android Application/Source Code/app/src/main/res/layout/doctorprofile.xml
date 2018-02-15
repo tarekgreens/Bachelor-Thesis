@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_blue_dark">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:padding="16dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Des"
+                        android:id="@+id/tvDrDesignation"
+                        android:textSize="18sp"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:text=" "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView20"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:text="firstName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvFirstName"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:text=" "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView22" />
+
+                    <TextView
+                        android:text="lastName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvDrLastName"
+                        android:textSize="18sp"
+                        android:textColor="@android:color/black"
+                        android:textStyle="normal|bold" />
+                </LinearLayout>
+
+                <TextView
+                    android:text="specialty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvSpecialty" />
+
+                <TextView
+                    android:text="Phone: "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView5"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:text="Phone Number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvDrPhone" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView21"
+                    android:text="Website:"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:text="website"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvDrWebsite" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Rating:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView26"
+                        android:textStyle="normal|bold" />
+
+                    <TextView
+                        android:text=" "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView27" />
+
+                    <TextView
+                        android:text="rating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tvDrRating" />
+                </LinearLayout>
+
+                <TextView
+                    android:text="Address:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView24"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:text="address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvDrAddress" />
+
+                <TextView
+                    android:text="Description:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView25"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:text="description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvDrDescription" />
+
+                <TextView
+                    android:text="Schedule:"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvDrSchedule11"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:text="schedule"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvDrSchedule" />
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+    </ScrollView>
